@@ -1,0 +1,11 @@
+<h1>Tree View</h1>
+
+<% @tree_views.each do |tree_view| %>
+  <p class='indent'>
+    <%= tree_view.name %>
+    <%= link_to 'Show', tree_view %>
+    <%= link_to 'Edit', edit_tree_view_path(tree_view) %>
+    <%= link_to 'Destroy', tree_view, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to "New with two new fields", {:controller => "tree_views", :action => "new", :prev_node => tree_view.id, :new_fields => 2}%>
+  </p>
+<% end %>

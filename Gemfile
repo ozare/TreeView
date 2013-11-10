@@ -6,8 +6,12 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem'ancestry'
 
-
+group :development do
+  gem "better_errors"
+end
+gem "binding_of_caller"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

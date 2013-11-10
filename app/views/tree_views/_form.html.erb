@@ -1,0 +1,17 @@
+
+  
+  <%= form_for(@tree_view) do |f| %>
+    <% @tree_view.attributes.each do |attr_name, attr_value| %>
+      <% if(attr_name != 'id' and attr_name != 'created_at' and attr_name != 'updated_at') %>
+        <div class="field">
+          <%= f.label attr_name %><br />
+          <%= f.text_field  attr_name%>
+        </div>
+      <% end%>
+    <% end %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+
+

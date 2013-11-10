@@ -1,4 +1,10 @@
 Treeview::Application.routes.draw do
+
+  root :to => 'tree_views#index'
+
+  resources :tree_views
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tree_view.name %>
+</p>
+<p>
+  <b>Parent:</b>
+  <%= @tree_view.parent_id %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_tree_view_path(@tree_view) %> |
+<%= link_to 'Back', tree_views_path %>
